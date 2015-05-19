@@ -11,4 +11,5 @@ end
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'rm_audio_recorder_android'
+  app.archs << 'x86'
 end
