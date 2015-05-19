@@ -1,0 +1,17 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<class name="at/markushi/circlebutton/BuildConfig" super="java/lang/Object">
+<method name="&lt;init&gt;" type="()V"/>
+</class>
+<class name="at/markushi/ui/CircleButton" super="android/widget/ImageView">
+<method name="&lt;init&gt;" type="(Landroid/content/Context;)V"/>
+<method name="&lt;init&gt;" type="(Landroid/content/Context;Landroid/util/AttributeSet;)V"/>
+<method name="&lt;init&gt;" type="(Landroid/content/Context;Landroid/util/AttributeSet;I)V"/>
+<method name="setPressed" type="(Z)V"/>
+<method name="onDraw" type="(Landroid/graphics/Canvas;)V"/>
+<method name="onSizeChanged" type="(IIII)V"/>
+<method name="getAnimationProgress" type="()F"/>
+<method name="setAnimationProgress" type="(F)V"/>
+<method name="setColor" type="(I)V"/>
+</class>
+</signatures>
