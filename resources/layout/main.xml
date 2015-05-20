@@ -8,7 +8,7 @@
 	android:id="@+id/record_button"
 	android:layout_width="88dp"
 	android:layout_height="wrap_content"
-	android:text="Record"
+  android:text="@string/record_button_off"
 	android:layout_alignParentTop="true"
 	android:layout_centerHorizontal="true" />
 </RelativeLayout>
