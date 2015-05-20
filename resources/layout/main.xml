@@ -14,20 +14,20 @@
 
 	    <at.markushi.ui.CircleButton
 			android:id="@+id/record_button"
-	        android:layout_width="86dip"
-	        android:layout_height="86dip"
-	        app:cb_color="#FF0000"
+	        android:layout_width="124dip"
+	        android:layout_height="124dip"
 			android:layout_centerInParent="true"
-	        app:cb_pressedRingWidth="8dip" />
+	        app:cb_color="#FF0000"
+	        app:cb_pressedRingWidth="24dip" />
 			
 	    <at.markushi.ui.CircleButton
 			android:id="@+id/stop_button"
-	        android:layout_width="86dip"
-	        android:layout_height="86dip"
+	        android:layout_width="124dip"
+	        android:layout_height="124dip"
+			android:layout_centerInParent="true"
 			android:visibility="gone"
 	        app:cb_color="#000000"
-			android:layout_centerInParent="true"
-	        app:cb_pressedRingWidth="8dip" />
+	        app:cb_pressedRingWidth="24dip" />
 
 	</FrameLayout>
 	
