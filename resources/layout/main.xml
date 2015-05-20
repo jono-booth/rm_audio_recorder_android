@@ -4,11 +4,44 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	xmlns:android="http://schemas.android.com/apk/res/android">
-<Button
-	android:id="@+id/record_button"
-	android:layout_width="88dp"
-	android:layout_height="wrap_content"
-  android:text="@string/record_button_off"
-	android:layout_alignParentTop="true"
-	android:layout_centerHorizontal="true" />
+	
+	<FrameLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true">
+
+	    <at.markushi.ui.CircleButton
+			android:id="@+id/record_button"
+	        android:layout_width="86dip"
+	        android:layout_height="86dip"
+	        app:cb_color="#FF0000"
+			android:layout_centerInParent="true"
+	        app:cb_pressedRingWidth="8dip" />
+			
+	    <at.markushi.ui.CircleButton
+			android:id="@+id/stop_button"
+	        android:layout_width="86dip"
+	        android:layout_height="86dip"
+			android:visibility="gone"
+	        app:cb_color="#000000"
+			android:layout_centerInParent="true"
+	        app:cb_pressedRingWidth="8dip" />
+
+	</FrameLayout>
+	
+	<com.skyfishjy.library.RippleBackground
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/content"
+	    app:rb_color="#0099CC"
+	    app:rb_radius="32dp"
+	    app:rb_rippleAmount="4"
+	    app:rb_duration="3000"
+	    app:rb_scale="6">
+	</com.skyfishjy.library.RippleBackground>
+
 </RelativeLayout>
