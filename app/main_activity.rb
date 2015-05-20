@@ -7,10 +7,12 @@ class MainActivity < Android::App::Activity
 
     @record_button = findViewById(R::Id::Record_button)
     @record_button.onClickListener = self
+    @recording = false
   end
 
   def onClick(view)
-    @recorder = true
-    p 'record pressed'
+    @recording = !@recording
+    text = @recording ? R::String::Record_button_on : R::String::Record_button_off
+    @record_button.text = getString(text)
   end
 end
