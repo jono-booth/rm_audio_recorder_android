@@ -17,5 +17,6 @@ Motion::Project::App.setup do |app|
 
   app.gradle do
     dependency 'com.github.markushi:circlebutton:1.1'
+    dependency 'com.skyfishjy.ripplebackground:library:1.0.1'
   end
 end
