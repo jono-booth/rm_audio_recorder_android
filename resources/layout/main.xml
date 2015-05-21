@@ -4,52 +4,50 @@
 	android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	xmlns:android="http://schemas.android.com/apk/res/android">
-	
+
 	<FrameLayout
 	    xmlns:android="http://schemas.android.com/apk/res/android"
 	    xmlns:app="http://schemas.android.com/apk/res-auto"
 	    android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+      android:layout_height="wrap_content"
 	    android:layout_centerHorizontal="true">
 
-	    <at.markushi.ui.CircleButton
-			android:id="@+id/record_button"
-	        android:layout_width="124dip"
-	        android:layout_height="124dip"
-			android:layout_centerInParent="true"
-	        app:cb_color="#FF0000"
-	        app:cb_pressedRingWidth="24dip" />
-			
-	    <at.markushi.ui.CircleButton
-			android:id="@+id/stop_button"
-	        android:layout_width="124dip"
-	        android:layout_height="124dip"
-			android:layout_centerInParent="true"
-			android:visibility="gone"
-	        app:cb_color="#000000"
-	        app:cb_pressedRingWidth="24dip" />
+		<ImageView
+          android:id="@+id/play_button"
+	        android:layout_width="124dp"
+	        android:layout_height="124dp"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/play_button"/>
 
 	</FrameLayout>
-	
+
 	<com.skyfishjy.library.RippleBackground
 	    xmlns:android="http://schemas.android.com/apk/res/android"
 	    xmlns:app="http://schemas.android.com/apk/res-auto"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
 	    android:id="@+id/content"
-	    app:rb_color="#0099CC"
+	    app:rb_color="#ff0000"
 	    app:rb_radius="32dp"
 	    app:rb_rippleAmount="4"
 	    app:rb_duration="3000"
 	    app:rb_scale="6">
-		
-		<Button
-			android:id="@+id/play_button"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Play"
-			android:layout_centerInParent="true" />
-		
+
+		<ImageView
+          android:id="@+id/record_button"
+	        android:layout_width="124dp"
+	        android:layout_height="124dp"
+	        android:layout_centerInParent="true"
+	        android:src="@drawable/record_button"/>
+
+		<ImageView
+          android:id="@+id/stop_button"
+	        android:layout_width="124dp"
+	        android:layout_height="124dp"
+	        android:layout_centerInParent="true"
+          android:visibility="gone"
+	        android:src="@drawable/stop_button"/>
+
 	</com.skyfishjy.library.RippleBackground>
 
 </RelativeLayout>
