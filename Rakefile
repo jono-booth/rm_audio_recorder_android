@@ -19,4 +19,7 @@ Motion::Project::App.setup do |app|
     dependency 'com.github.markushi:circlebutton:1.1'
     dependency 'com.skyfishjy.ripplebackground:library:1.0.1'
   end
+  app.permissions << 'android.permission.WRITE_EXTERNAL_STORAGE'
+  app.permissions << 'android.permission.READ_EXTERNAL_STORAGE'
+  app.permissions << 'android.permission.RECORD_AUDIO'
 end
