@@ -1,5 +1,4 @@
 class MainActivity < Android::App::Activity
-  attr_accessor :recorder
 
   def onCreate(savedInstanceState)
     super
@@ -13,6 +12,7 @@ class MainActivity < Android::App::Activity
     @play_button.onClickListener = Player.new
     @ripple_background = findViewById(R::Id::Content)
 
+    @view = Android::View::View
   end
 
   def onClick(view)
@@ -28,14 +28,14 @@ class MainActivity < Android::App::Activity
   end
 
   def start_recording
-    @record_button.setVisibility(4)
-    @stop_button.setVisibility(0)
+    @record_button.setVisibility(@view::GONE)
+    @stop_button.setVisibility(@view::VISIBLE)
     @ripple_background.startRippleAnimation
   end
 
   def stop_recording
-    @stop_button.setVisibility(4)
-    @record_button.setVisibility(0)
+    @stop_button.setVisibility(@view::GONE)
+    @record_button.setVisibility(@view::VISIBLE)
     @ripple_background.stopRippleAnimation
   end
 
