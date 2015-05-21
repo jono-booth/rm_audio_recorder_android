@@ -1,5 +1,5 @@
 describe "Main activity" do
   it "has a title" do
-    main_activity.title.should == "rm_audio_recorder_android"
+    main_activity.title.should == "RM Audio Recorder"
   end
 end
