@@ -15,6 +15,9 @@ And an emulator or device. The Android emulator is super slow so install Genymot
 
 [http://www.iconoclastlabs.com/blog/rubymotion-android-in-the-emulator-with-genymotion](http://www.iconoclastlabs.com/blog/rubymotion-android-in-the-emulator-with-genymotion)
 
+You might also need Gradle installed on your system.
+[https://github.com/HipByte/motion-gradle](https://github.com/HipByte/motion-gradle)
+
 Clone the Repo, cd into the folder and run:
 <pre>
 $ rake
