@@ -6,18 +6,18 @@
 	xmlns:android="http://schemas.android.com/apk/res/android">
 
 	<FrameLayout
-	    xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:app="http://schemas.android.com/apk/res-auto"
-	    android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-	    android:layout_centerHorizontal="true">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
 
 		<ImageView
-          android:id="@+id/play_button"
-	        android:layout_width="124dp"
-	        android:layout_height="124dp"
-	        android:layout_centerInParent="true"
-	        android:src="@drawable/play_button"/>
+      android:id="@+id/play_button"
+      android:layout_width="124dp"
+      android:layout_height="124dp"
+      android:layout_centerInParent="true"
+      android:src="@drawable/play_button"/>
 
 	</FrameLayout>
 
@@ -34,19 +34,19 @@
 	    app:rb_scale="6">
 
 		<ImageView
-          android:id="@+id/record_button"
-	        android:layout_width="124dp"
-	        android:layout_height="124dp"
-	        android:layout_centerInParent="true"
-	        android:src="@drawable/record_button"/>
+      android:id="@+id/record_button"
+      android:layout_width="124dp"
+      android:layout_height="124dp"
+      android:layout_centerInParent="true"
+      android:src="@drawable/record_button"/>
 
 		<ImageView
-          android:id="@+id/stop_button"
-	        android:layout_width="124dp"
-	        android:layout_height="124dp"
-	        android:layout_centerInParent="true"
-          android:visibility="gone"
-	        android:src="@drawable/stop_button"/>
+      android:id="@+id/stop_button"
+      android:layout_width="124dp"
+      android:layout_height="124dp"
+      android:layout_centerInParent="true"
+      android:visibility="gone"
+      android:src="@drawable/stop_button"/>
 
 	</com.skyfishjy.library.RippleBackground>
 
