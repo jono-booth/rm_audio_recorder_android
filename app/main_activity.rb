@@ -5,35 +5,43 @@ class MainActivity < Android::App::Activity
     super
     setContentView(R::Layout::Main)
 
-    @rippleBackground = findViewById(R::Id::Content)
-
     @record_button = findViewById(R::Id::Record_button)
     @stop_button = findViewById(R::Id::Stop_button)
-
     @record_button.onClickListener = @stop_button.onClickListener = self
-    @recording = false
+
+    @play_button = findViewById(R::Id::Play_button)
+    @play_button.onClickListener = Player.new
+    @ripple_background = findViewById(R::Id::Content)
+
   end
 
   def onClick(view)
-    @recording = !@recording
-    if @recording
-      start_recording
-    else
+    if @recorder
+      @recorder.stop
+      @recorder = nil
       stop_recording
+    else
+      @recorder = Recorder.new
+      @recorder.start
+      start_recording
     end
   end
 
   def start_recording
     @record_button.setVisibility(4)
     @stop_button.setVisibility(0)
-
-    @rippleBackground.startRippleAnimation
+    @ripple_background.startRippleAnimation
   end
 
   def stop_recording
     @stop_button.setVisibility(4)
     @record_button.setVisibility(0)
-
-    @rippleBackground.stopRippleAnimation
+    @ripple_background.stopRippleAnimation
   end
+
+  def play_recording
+    @recording = Recording.new
+    @recording.play
+  end
+
 end
